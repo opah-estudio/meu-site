@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paloma Cardoso | Brand Design</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos Globais e Tipografia */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #fff4e5; /* Fundo claro */
+            color: #000000; /* Texto principal preto */
+            overflow-x: hidden;
+        }
+
+        .font-obviously {
+            font-family: 'Obviously Extended', 'Syncopate', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* Cabeçalho com Logos */
+        .header {
+            padding: 40px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo {
+            max-height: 80px; /* Tamanho do logo da esquerda */
+            width: auto;
+            object-fit: contain;
+        }
+
+        .header-logo.logo-direita {
+            max-height: 40px; /* Metade do tamanho para o logo da direita */
+        }
+
+        /* Seção da Frase de Impacto */
+        .intro-section {
+            padding: 80px 5%;
+            text-align: left; /* Alinhamento à esquerda */
+        }
+
+        .intro-section h2 {
+            font-size: clamp(30px, 5vw, 80px);
+            line-height: 1.2;
+            letter-spacing: 1px;
+            color: #ff68c0; /* Cor rosa específica para a frase */
+        }
+
+        /* Grid de Projetos */
+        .projects-section {
+            padding: 20px 5% 80px 5%;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            display: block;
+            overflow: hidden;
+            border-radius: 4px;
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Seção de Contato */
+        .contact-section {
+            background-color: #fff4e5;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px 5%;
+            position: relative;
+        }
+
+        .contact-title-container {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-title-container h2 {
+            font-size: clamp(40px, 7vw, 100px);
+            text-align: center;
+            letter-spacing: 2px;
+            color: #000000;
+        }
+
+        /* Rodapé de Links */
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border-top: 1px solid #ccc;
+            padding-top: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ff68c0;
+        }
+
+        /* Responsividade (Celular) */
+        @media (max-width: 768px) {
+            .header-logo {
+                max-height: 60px; /* Tamanho do logo da esquerda no celular */
+            }
+            .header-logo.logo-direita {
+                max-height: 30px; /* Metade do tamanho no celular */
+            }
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-links {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho com Logos -->
+    <header class="header">
+        <img src="anexo 1.png" alt="Logo Opah" class="header-logo">
+        <img src="anexo 2.png" alt="Logo Smile" class="header-logo logo-direita">
+    </header>
+
+    <main>
+        <!-- Seção: Frase de Impacto -->
+        <section class="intro-section">
+            <h2 class="font-obviously">
+                SEJA A EXCEÇÃO QUE<br>
+                CRIA IMPACTO!
+            </h2>
+        </section>
+
+        <!-- Grid de Projetos -->
+        <section class="projects-section">
+            <div class="project-grid">
+                
+                <a href="https://www.behance.net/palomacardoso97" target="_blank" class="grid-item">
+                    <img src="f5ec6e223853681.6800306313111.png" alt="Projeto Inconformesa">
+                </a>
+                
+                <a href="https://www.behance.net/palomacardoso97" target="_blank" class="grid-item">
+                    <img src="769cfe231678147.68a79df02e5ec.webp" alt="Projeto Blow">
+                </a>
+                
+                <a href="https://www.behance.net/palomacardoso97" target="_blank" class="grid-item">
+                    <img src="c009b0237083085.68f9596053d58.webp" alt="Projeto Frigelissê">
+                </a>
+
+                <a href="https://www.behance.net/palomacardoso97" target="_blank" class="grid-item">
+                    <img src="6419a8244654785.699c95968770b.webp" alt="Projeto Smash">
+                </a>
+                
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section class="contact-section">
+            <div class="contact-title-container">
+                <h2 class="font-obviously">VAMOS CONVERSAR?</h2>
+            </div>
+            
+            <div class="footer-links">
+                <a href="mailto:paloma.cardoso.sisto@hotmail.com" target="_blank">Email</a>
+                <a href="https://wa.me/+5516992391313" target="_blank">WhatsApp</a>
+                <a href="https://www.instagram.com/__palomacardoso/?hl=pt-br" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in/paloma-cardoso-2162131a5/" target="_blank">LinkedIn</a>
+                <a href="https://www.behance.net/palomacardoso97" target="_blank">Behance</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
